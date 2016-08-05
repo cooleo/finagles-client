@@ -1,4 +1,4 @@
-package com.jensraaby.finagle
+package com.coole.finagle
 
 import com.twitter.finagle.Http
 import com.twitter.finagle.http.{RequestBuilder, Response}
@@ -6,7 +6,7 @@ import com.twitter.util.{Await, Future}
 
 object BasicClient extends App {
 
-  val client = Http.client.newService("localhost:8080")
+  val client = Http.client.newService("localhost:7777")
 
   val request = RequestBuilder().url("http://localhost/").buildGet()
   val response: Future[Response] = client(request)
