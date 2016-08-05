@@ -2,7 +2,7 @@ import sbt.Keys.{artifactPath, libraryDependencies, mainClass, managedClasspath,
 
 
 
-name := "finagles-server"
+name := "finagles-client"
 organization := "com.coole.finagle"
 version := "1.0"
 scalaVersion := "2.11.8"
