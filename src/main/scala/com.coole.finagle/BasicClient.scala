@@ -8,7 +8,7 @@ object BasicClient extends App {
 
   val client = Http.client.newService("0.0.0.0:7777")
 
-  val request = RequestBuilder().url("http://0.0.0/").buildGet()
+  val request = RequestBuilder().url("http://0.0.0.0/").buildGet()
   val response: Future[Response] = client(request)
 
   Await.result {
